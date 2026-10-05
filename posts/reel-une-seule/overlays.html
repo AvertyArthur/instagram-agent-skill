@@ -1,0 +1,27 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><style>
+:root{--bg:#F5F0E6;--ink:#2A231B;--soft:#6E6253;--bronze:#96754A;--bronze-ink:#7A5D36;--line:#D9CDB8}
+*{margin:0;padding:0;box-sizing:border-box}html,body{background:transparent}
+section{width:1080px;height:1920px;position:relative;font-family:"Liberation Sans",sans-serif}
+/* overlay: hook band at top of safe zone, big number under the photo; right 230 px clear of text */
+section:not(.end)::before{content:"";position:absolute;left:0;right:0;top:0;height:620px;background:linear-gradient(rgba(20,16,12,.55),rgba(20,16,12,.35) 60%,rgba(20,16,12,0))}
+.top{position:absolute;top:250px;left:70px;right:230px;color:#FBF8F2;text-shadow:0 2px 24px rgba(0,0,0,.55)}
+.top h1{font-family:"Bitstream Charter","Liberation Serif",serif;font-weight:400;font-size:84px;line-height:1.1}
+.top p{font-size:40px;letter-spacing:3px;margin-top:18px}
+.num{position:absolute;left:70px;top:1230px;width:190px;height:190px;border-radius:50%;background:rgba(245,240,230,.95);outline:2px solid var(--bronze);outline-offset:-12px;display:flex;align-items:center;justify-content:center;font-family:"Bitstream Charter",serif;font-size:110px;color:var(--ink)}
+.end{background:var(--bg);display:flex;flex-direction:column;align-items:center;text-align:center}
+.end::after{content:"";position:absolute;inset:44px;border:1px solid var(--line)}
+.end svg{width:190px;height:190px;color:var(--bronze);margin-top:430px}
+.end h2{font-family:"Bitstream Charter","Liberation Serif",serif;font-weight:400;font-size:96px;line-height:1.1;margin:70px 120px 0;color:var(--ink)}
+.end p{font-size:44px;color:var(--soft);margin-top:44px}
+.end .h{font-size:34px;letter-spacing:4px;color:var(--bronze-ink);margin-top:70px}
+</style></head><body>
+<section data-name="ov-1"><div class="top"><h1>Une seule pour l'été.</h1><p>Laquelle ?</p></div><div class="num">1</div></section>
+<section data-name="ov-2"><div class="top"><h1>Une seule pour l'été.</h1><p>Laquelle ?</p></div><div class="num">2</div></section>
+<section data-name="ov-3"><div class="top"><h1>Une seule pour l'été.</h1><p>Laquelle ?</p></div><div class="num">3</div></section>
+<section data-name="ov-4"><div class="top"><h1>Une seule pour l'été.</h1><p>Laquelle ?</p></div><div class="num">4</div></section>
+<section data-name="ov-5"><div class="top"><h1>Une seule pour l'été.</h1><p>Laquelle ?</p></div><div class="num">5</div></section>
+<section data-name="ov-6"><div class="top"><h1>Une seule pour l'été.</h1><p>Laquelle ?</p></div><div class="num">6</div></section>
+<section data-name="ov-7"><div class="top"><h1>Une seule pour l'été.</h1><p>Laquelle ?</p></div><div class="num">7</div></section>
+<section data-name="ov-8"><div class="top"><h1>Une seule pour l'été.</h1><p>Laquelle ?</p></div><div class="num">8</div></section>
+<section data-name="end" class="end"><svg viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42"/></g></svg><h2>Commentez votre numéro.</h2><p>Une seule. Pas de deuxième choix.</p><div class="h">@the.keyscollection</div></section>
+</body></html>
