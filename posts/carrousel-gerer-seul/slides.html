@@ -1,68 +1,82 @@
 <!doctype html><html lang="fr"><head><meta charset="utf-8"><style>
-:root{--bg:#101820;--ink:#F3EDE2;--muted:#B9B2A6;--gold:#C9A45C;--line:#2c3a46}
+:root{--bg:#F5F0E6;--ink:#2A231B;--soft:#6E6253;--bronze:#96754A;--bronze-ink:#7A5D36;--line:#D9CDB8}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg)}
-section{width:1080px;height:1350px;background:var(--bg);color:var(--ink);position:relative;padding:150px 130px;display:flex;flex-direction:column;justify-content:center;font-family:"Liberation Sans",sans-serif}
-.serif{font-family:"Bitstream Charter","Liberation Serif",serif}
-.brand{position:absolute;top:110px;left:130px;font-size:30px;letter-spacing:8px;color:var(--gold);text-transform:uppercase}
-.num{position:absolute;top:110px;right:130px;font-size:32px;color:var(--muted)}
-.handle{position:absolute;bottom:110px;left:130px;font-size:32px;color:var(--muted)}
-.key{position:absolute;bottom:104px;right:130px;width:120px;height:2px;background:var(--gold)}
-.rule{width:110px;height:3px;background:var(--gold);margin:50px 0}
-h1{font-size:124px;line-height:1.05;font-weight:700}
-h2{font-size:88px;line-height:1.1;font-weight:700}
-p{font-size:42px;line-height:1.4}
-p.sub{font-size:48px;color:var(--muted)}
-.big{font-size:56px;line-height:1.35}
-.col{border-left:3px solid var(--line);padding:6px 0 6px 36px;margin-bottom:44px}
-.col p{color:var(--muted)}
-.col.gold{border-color:var(--gold)}.col.gold p{color:var(--ink)}
-.tag{font-size:28px;letter-spacing:5px;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
-.col.gold .tag{color:var(--gold)}
-.k{font-size:30px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
-.v p{font-size:40px;margin-bottom:56px}
+section{width:1080px;height:1350px;background:var(--bg);color:var(--ink);position:relative;overflow:hidden;padding:170px 140px;display:flex;flex-direction:column;justify-content:center;font-family:"Liberation Sans",sans-serif}
+section::after{content:"";position:absolute;inset:44px;border:1px solid var(--line);pointer-events:none}
+h1,h2{font-family:"Bitstream Charter","Liberation Serif",serif;font-weight:400;letter-spacing:-.5px}
+h1{font-size:112px;line-height:1.08}
+h2{font-size:84px;line-height:1.12}
+p{font-size:40px;line-height:1.45}
+.wm{position:absolute;width:900px;height:900px;right:-320px;bottom:-330px;color:var(--bronze);opacity:.18}
+.mini g{stroke-width:2.4}.emb g{stroke-width:1.1}
+.mini{width:58px;height:58px;color:var(--bronze)}
+.foot{position:absolute;bottom:96px;left:140px;display:flex;align-items:center;gap:18px;font-size:28px;letter-spacing:2px;color:var(--soft)}
+.num{position:absolute;top:104px;right:140px;font-size:26px;letter-spacing:5px;color:var(--bronze-ink)}
+.label{font-size:26px;letter-spacing:7px;text-transform:uppercase;color:var(--bronze-ink);margin-bottom:34px}
+.rule{width:90px;height:1px;background:var(--bronze);margin:48px 0}
+.col{border-left:1px solid var(--line);padding:4px 0 4px 36px;margin-bottom:46px}
+.col p{color:var(--soft)}
+.col.on{border-left:2px solid var(--bronze)}.col.on p{color:var(--ink)}
+.tag{font-size:24px;letter-spacing:6px;text-transform:uppercase;color:var(--soft);margin-bottom:14px}
+.col.on .tag{color:var(--bronze-ink)}
+.cover{align-items:center;text-align:center}
+.cover .emb{width:330px;height:330px;color:var(--bronze);margin-bottom:56px}
+.cover .rule{margin:48px auto}
+.cover p{color:var(--soft);font-size:42px;max-width:720px}
+.brandline{position:absolute;bottom:96px;left:0;right:0;text-align:center;font-size:26px;letter-spacing:9px;text-transform:uppercase;color:var(--bronze-ink)}
+.big{font-size:52px;line-height:1.4;font-family:"Bitstream Charter","Liberation Serif",serif;color:var(--soft)}
+.v .label{margin-bottom:16px}.v p{margin-bottom:64px}
+.end{align-items:center;text-align:center}
+.end .emb{width:200px;height:200px;color:var(--bronze);margin-bottom:60px}
+.end .rule{margin:48px auto}.end p{color:var(--soft);max-width:760px}
 </style></head><body>
-<section><div class="brand">The Keys Collection</div>
-<h1 class="serif">Gérer seul ou déléguer ?</h1><div class="rule"></div>
-<p class="sub">Ce qu'un bien d'exception demande vraiment, poste par poste.</p>
-<div class="handle">@the.keyscollection</div><div class="key"></div></section>
-<section><div class="num">2/9</div>
-<h2 class="serif">Gérer seul, ça marche.</h2><div class="rule"></div>
+<section class="cover"><svg class="emb" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg>
+<h1>Gérer seul<br>ou déléguer ?</h1><div class="rule"></div>
+<p>Ce qu'un bien d'exception demande vraiment, poste par poste.</p>
+<div class="brandline">The Keys Collection</div></section>
+<section><svg class="wm" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg><div class="num">02 / 09</div>
+<h2>Gérer seul,<br>ça marche.</h2><div class="rule"></div>
 <p class="big">Tant que vous êtes disponible 7 jours sur 7, pendant toute la saison.</p>
-<div class="handle">@the.keyscollection</div><div class="key"></div></section>
-<section><div class="num">3/9</div>
-<h2 class="serif">L'accueil</h2><div class="rule"></div>
+<div class="foot"><svg class="mini" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg><span>@the.keyscollection</span></div></section>
+<section><svg class="wm" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg><div class="num">03 / 09</div>
+<div class="label">Poste par poste</div>
+<h2>L'accueil</h2><div class="rule"></div>
 <div class="col"><div class="tag">Seul</div><p>Vous remettez les clés à l'heure où le locataire atterrit.</p></div>
-<div class="col gold"><div class="tag">Avec une conciergerie</div><p>Quelqu'un sur place, quelle que soit l'heure d'arrivée.</p></div>
-<div class="handle">@the.keyscollection</div><div class="key"></div></section>
-<section><div class="num">4/9</div>
-<h2 class="serif">Ménage et linge</h2><div class="rule"></div>
+<div class="col on"><div class="tag">Avec une conciergerie</div><p>Quelqu'un sur place, quelle que soit l'heure d'arrivée.</p></div>
+<div class="foot"><svg class="mini" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg><span>@the.keyscollection</span></div></section>
+<section><svg class="wm" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg><div class="num">04 / 09</div>
+<div class="label">Poste par poste</div>
+<h2>Ménage et linge</h2><div class="rule"></div>
 <div class="col"><div class="tag">Seul</div><p>Vous trouvez, payez et contrôlez chaque prestataire.</p></div>
-<div class="col gold"><div class="tag">Avec une conciergerie</div><p>Une équipe qui connaît le bien et vérifie après chaque départ.</p></div>
-<div class="handle">@the.keyscollection</div><div class="key"></div></section>
-<section><div class="num">5/9</div>
-<h2 class="serif">Les prix</h2><div class="rule"></div>
+<div class="col on"><div class="tag">Avec une conciergerie</div><p>Une équipe qui connaît le bien et vérifie après chaque départ.</p></div>
+<div class="foot"><svg class="mini" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg><span>@the.keyscollection</span></div></section>
+<section><svg class="wm" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg><div class="num">05 / 09</div>
+<div class="label">Poste par poste</div>
+<h2>Les prix</h2><div class="rule"></div>
 <div class="col"><div class="tag">Seul</div><p>Vous suivez la demande vous-même, semaine après semaine.</p></div>
-<div class="col gold"><div class="tag">Avec une conciergerie</div><p>Les tarifs bougent avec la saison et les événements du coin.</p></div>
-<div class="handle">@the.keyscollection</div><div class="key"></div></section>
-<section><div class="num">6/9</div>
-<h2 class="serif">Les urgences</h2><div class="rule"></div>
+<div class="col on"><div class="tag">Avec une conciergerie</div><p>Les tarifs bougent avec la saison et les événements du coin.</p></div>
+<div class="foot"><svg class="mini" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg><span>@the.keyscollection</span></div></section>
+<section><svg class="wm" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg><div class="num">06 / 09</div>
+<div class="label">Poste par poste</div>
+<h2>Les urgences</h2><div class="rule"></div>
 <div class="col"><div class="tag">Seul</div><p>Fuite à 23 h : c'est votre téléphone qui sonne.</p></div>
-<div class="col gold"><div class="tag">Avec une conciergerie</div><p>Un intervenant de confiance se déplace.</p></div>
-<div class="handle">@the.keyscollection</div><div class="key"></div></section>
-<section><div class="num">7/9</div>
-<h2 class="serif">Le coût</h2><div class="rule"></div>
+<div class="col on"><div class="tag">Avec une conciergerie</div><p>Un intervenant de confiance se déplace.</p></div>
+<div class="foot"><svg class="mini" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg><span>@the.keyscollection</span></div></section>
+<section><svg class="wm" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg><div class="num">07 / 09</div>
+<div class="label">Poste par poste</div>
+<h2>Le coût</h2><div class="rule"></div>
 <div class="col"><div class="tag">Seul</div><p>Pas de commission, mais beaucoup de votre temps.</p></div>
-<div class="col gold"><div class="tag">Avec une conciergerie</div><p>Une commission sur les revenus, et votre temps reste à vous.</p></div>
-<div class="handle">@the.keyscollection</div><div class="key"></div></section>
-<section class="v"><div class="num">8/9</div>
-<div class="k">Gérer seul a du sens si</div>
+<div class="col on"><div class="tag">Avec une conciergerie</div><p>Une commission sur les revenus, et votre temps reste à vous.</p></div>
+<div class="foot"><svg class="mini" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg><span>@the.keyscollection</span></div></section>
+<section class="v"><svg class="wm" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg><div class="num">08 / 09</div>
+<div class="label">Gérer seul a du sens si</div>
 <p>vous habitez à côté, louez peu de semaines et aimez recevoir.</p>
-<div class="k">Déléguer a du sens si</div>
-<p>vous êtes loin, louez souvent et voulez les revenus sans le quotidien.</p>
-<div class="handle">@the.keyscollection</div><div class="key"></div></section>
-<section><div class="num">9/9</div>
-<h1 class="serif" style="font-size:96px">Envoyez ce post à un propriétaire qui hésite.</h1><div class="rule"></div>
-<p class="sub">Et si vous choisissez de déléguer, on vous présente la conciergerie faite pour votre bien.</p>
-<div class="handle">@the.keyscollection</div><div class="key"></div></section>
+<div class="label">Déléguer a du sens si</div>
+<p style="color:var(--ink)">vous êtes loin, louez souvent et voulez les revenus sans le quotidien.</p>
+<div class="foot"><svg class="mini" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg><span>@the.keyscollection</span></div></section>
+<section class="end"><svg class="emb" viewBox="0 0 300 300"><g transform="translate(150,150) scale(1.35)" fill="none" stroke="currentColor" stroke-width="0.75"><circle cx="0" cy="-42" r="42"/><circle cx="36.4" cy="-21" r="42"/><circle cx="36.4" cy="21" r="42"/><circle cx="0" cy="42" r="42"/><circle cx="-36.4" cy="21" r="42"/><circle cx="-36.4" cy="-21" r="42"/><circle r="42" stroke-width="0.55"/></g></svg>
+<h2>Envoyez ce post à un propriétaire qui hésite.</h2><div class="rule"></div>
+<p>Et si vous choisissez de déléguer, on vous présente la conciergerie faite pour votre bien.</p>
+<div class="brandline">@the.keyscollection</div></section>
 </body></html>
