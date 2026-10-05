@@ -2,7 +2,7 @@
 # Fast "pick one" reel: each photo sharp in the middle over a blurred copy of itself, hard cuts, end card.
 set -e
 PH=../reel-check-list-arrivee/photos
-ORDER="4 1 7 2 5 6 3 8"; D=1.3; END=2.6; FPS=30; TOP=520
+ORDER="4 1 7 2 5 6 3"; D=1.3; END=2.6; FPS=30; TOP=520
 fr=$(awk "BEGIN{print int($D*$FPS)}")
 in=""; f=""; n=0; k=0; cat=""
 for p in $ORDER; do
